@@ -50,7 +50,7 @@
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "https://raw.githubusercontent.com/freee/freee-api-schema/master/" + api_version + "/open-api-3/api-schema.yml",
+        url: "https://raw.githubusercontent.com/ryo1993/freee-api-schema/master/" + api_version + "/open-api-3/api-schema.yml",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
@@ -64,6 +64,7 @@
         apisSorter: "alpha",
         operationsSorter: "method",
         tagsSorter: "alpha",
+        oauth2RedirectUrl: "https://ryo1993.github.io/freee-api-schema/github_pages/oauth2-redirect.html"
       })
       // End Swagger UI call region
 
